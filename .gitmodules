@@ -1,0 +1,3 @@
+[submodule "externals/sqbind17"]
+	path = externals/sqbind17
+	url = https://github.com/shabbywu/sqbind17.git
