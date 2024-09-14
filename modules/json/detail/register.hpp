@@ -1,7 +1,8 @@
 #pragma once
+#include "vm.hpp"
+
 #include "json_dumps.hpp"
 #include "json_loads.hpp"
-#include "vm.hpp"
 
 namespace sqext_json {
 void static sqext_register_jsonlib_impl(sqbind17::detail::VM &v) {

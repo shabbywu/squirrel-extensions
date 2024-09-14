@@ -32,4 +32,4 @@ set(SQUIRREL305 1)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/externals/sqbind17)
 
 add_subdirectory(modules/json)
-add_subdirectory(test/sq)
+add_subdirectory(test/sq_repl)

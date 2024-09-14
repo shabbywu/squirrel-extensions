@@ -1,7 +1,8 @@
-#include "plugins.h"
 #include <format>
 #include <iostream>
 #include <sqbind17/sqbind17.hpp>
+
+#include "plugins.h"
 
 using namespace sqbind17;
 
