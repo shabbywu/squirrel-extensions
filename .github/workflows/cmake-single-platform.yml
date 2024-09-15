@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Configure CMake
+      run: cmake --preset=windows-x86
+    - name: Build
+      run: cmake --build --preset=windows-x86
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: bb-launcher.${{ github.ref_name }}
+        path: bin
+        retention-days: 14
