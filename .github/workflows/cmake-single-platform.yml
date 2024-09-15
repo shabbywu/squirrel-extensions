@@ -8,6 +8,8 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: 'recursive'
     - name: Configure CMake
       run: cmake --preset=windows-x86
     - name: Build
