@@ -30,10 +30,13 @@ void Interactive(detail::GenericVM vm) {
       buff << line;
       std::cout << "... ";
     }
+
     try {
       vm.ExecuteString(buff.str());
     } catch (const std::exception &e) {
       std::cerr << e.what() << '\n';
+    } catch (...) {
+      std::cerr << "exception...\n";
     }
   }
 }

@@ -1,6 +1,5 @@
 #pragma once
 #include <filesystem>
-#include <peconv.h>
 
 #include <map>
 #include <squirrel.h>
